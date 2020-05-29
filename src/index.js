@@ -10,10 +10,12 @@ const config = {};
 if (process.env.NODE_ENV === 'development') {
     // baseUrl = 'https://hmis10.health.go.ug/training/';
     // config.baseUrl = `https://hmis10.health.go.ug/training/api`;
-    config.baseUrl = `http://localhost:8080/api`;
+    //config.baseUrl = `http://localhost:8080/api`;
     // config.headers = {Authorization: 'Basic YnJpYW46TnRhcmUxMjMj'}; //HIMS 3
-    config.headers = {Authorization: 'Basic YWRtaW46ZGlzdHJpY3Q='}; // admin
+    //config.headers = {Authorization: 'Basic YWRtaW46ZGlzdHJpY3Q='}; // admin
     // config.headers = {Authorization: 'Basic SElTUFVnYW5kYTpIaXNwQDIwMTk='};// HMIS10
+    config.baseUrl = `http://localhost:8989/dhis/api`;
+    config.headers = { Authorization: 'Basic ' + btoa('pentaho:Pentaho1') };
 } else {
     let baseUrl = '';
     let urlArray = window.location.pathname.split('/');

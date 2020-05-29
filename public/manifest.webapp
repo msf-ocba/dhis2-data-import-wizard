@@ -7,9 +7,9 @@
     }
   },
   "appType": "APP",
-  "name": "Data Import Wizard",
+  "name": "Data Import Wizard COVID",
   "version": "1.0.2",
-  "description": "Data Importer Wizard",
+  "description": "Data Importer Wizard COVID",
   "icons": {
     "48": "favicon.ico"
   },

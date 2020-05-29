@@ -1284,6 +1284,9 @@ export const processEvents = (program, data, uniqueDatesData, uniqueDataElementD
         return _.omit(e, 'update');
     });
 
+    //Added temporary fix for removing specific conflicts --- TODO
+    conflicts = conflicts.filter(row => row.error !== "Invalid value NA for value type DATE");
+
     return {eventsUpdate, newEvents, conflicts, errors}
 };
 
